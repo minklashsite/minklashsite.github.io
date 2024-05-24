@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -24,9 +24,24 @@
             </a>
             
         </header>
+	<button class="button-85" role="button" onclick="sharePage()">compartir página</button>
+	    <script>
+	      function sharePage() {
+	    if (navigator.share) {
+	        navigator.share({
+	            title: document.title,
+	            url: window.location.href
+	        }).then(() => {
+	            console.log('Thanks for sharing!');
+	        }).catch((error) => {
+	            console.log('Error sharing:', error);
+	        });
+	    } else {
+	        alert('Web Share API is not supported in your browser.');
+	    }
+	}
 
-
-
+	    </script>
 
         <h1 class='titulo-sep'>Redes Sociales</h1>
         <p>Pulsa Cualquier Link Para Ir a Nuestra Red</p>
