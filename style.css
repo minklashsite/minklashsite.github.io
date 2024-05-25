@@ -15,7 +15,7 @@ a {
 body {
     padding: 32px;
     color: white;
-    background-color: #17171C;
+    background-color: #000;
     display: flex;
     justify-content: center;
 }
@@ -315,4 +315,42 @@ span.new {
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border: 10px solid transparent;
+    border-radius: 15px; /* Ajusta el radio del borde según tu preferencia */
+    animation: led-border 3s infinite;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Definimos la animación del borde */
+@keyframes led-border {
+    0% {
+        border-color: #8e44ad; /* Morado */
+        box-shadow: 0 0 20px #8e44ad;
+    }
+    33% {
+        border-color: #ff6b81; /* Rosita */
+        box-shadow: 0 0 20px #ff6b81;
+    }
+    66% {
+        border-color: #3498db; /* Azul */
+        box-shadow: 0 0 20px #3498db;
+    }
+    100% {
+        border-color: #8e44ad; /* Morado */
+        box-shadow: 0 0 20px #8e44ad;
+    }
 }
