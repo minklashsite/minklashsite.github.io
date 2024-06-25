@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #f3e7fe, #fbd6f5);
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff70a3;
+    color: white;
+    border-bottom: 5px solid #ff4d91;
+}
+
+header img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 20px 0 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffe0e9;
+}
+
+/* Service Section Styles */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h2 {
+    color: #ff4d91;
+    margin-bottom: 10px;
+}
+
+.service img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.options {
+    margin: 15px 0;
+}
+
+.options p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.reserve-btn {
+    background-color: #ff4d91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reserve-btn:hover {
+    background-color: #ff70a3;
+}
+
+.reservation-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.reservation-form input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #ff4d91;
+    border-radius: 10px;
+}
+
+.reservation-form button {
+    background-color: #ff70a3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reservation-form button:hover {
+    background-color: #ff4d91;
+}
+
+.precios {
+    color: #FF70A3;  /* Color rosita */
+    font-weight: bold;  /* Letra más gruesa */
+    padding: 5px 10px;  /* Relleno interno */
+    border-radius: 5px;  /* Bordes redondeados */
+    background-color: #FFE0E9;  /* Fondo rosita claro */
+    display: inline-block;  /* Para que se comporte como un elemento en línea */
+    margin: 10px 0;  /* Margen superior e inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra para efecto de profundidad */
+    transition: background-color 0.3s ease-in-out;  /* Transición suave en cambio de color de fondo */
+}
+
+.precios:hover {
+    background-color: #FFB6C1;  /* Cambio de color de fondo al pasar el cursor */
+}
+
+/* Estilo para la tabla de horarios */
+#horarios {
+    margin: 20px 0;
+}
+
+#horarios .table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#horarios .table th, #horarios .table td {
+    padding: 10px;
+    text-align: left;
+}
+
+#horarios .table thead {
+    background-color: pink; /* Morado */
+    color: #fff;
+}
+
+#horarios .table tbody tr:nth-child(even) {
+    background-color: pink; /* Gris claro */
+}
+
+#horarios .table tbody tr:hover {
+    background-color: #e9ecef; /* Gris más claro */
+}
