@@ -36,20 +36,29 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-    <header>
+    <header class="ubuntu-bold">
         <img src="img/minklashplayas.webp" alt="Mink Lash Playas - Pestañas">
         <h1>Mink Lash Playas Extensiones de Pestañas</h1>
         <p>En Mink Lash Playas ubicados en Playas de Tijuana les brindamos nuestros servicios de extensiones de pestañas de lunes a sábado únicamente por citas.</p>
+	<p>If you want to access the site in English, please press the button below.</p>
+    <div class="language-switch">
+        <img src="img/us-flag.png" alt="minklash.site english" class="flag-icon">
+	<a href="./en/">
+        <button class="button-85">English</button>
+	</a>
+    </div>
     </header>
-    <section id="horarios">
+    <section id="horarios" class="mono-medium">
         <h2>Horarios Disponibles</h2>
         <table class="table table-bordered table-striped">
             <thead class="thead-dark">
@@ -74,7 +83,7 @@
     </section>
     <section id="services">
         <div class="service">
-            <h2>Mink Lash Playas Pestañas Clásicas</h2>
+            <h2 class="mono-medium">Mink Lash Playas Pestañas Clásicas</h2>
             <img src="img/minklashclasicas.jpg" alt="Pestañas Clásicas Mink Lash Playas" class="zoom-img">
             <div class="options">
                 <p>En Mink Lash Playas recomendamos a todas nuestras clientas ponerse pestañas clásicas y hacer el relleno cada 15 días.</p>
@@ -87,7 +96,7 @@
         </div>
 
         <div class="service">
-            <h2>Mink Lash Playas Pestañas Híbridas</h2>
+            <h2 class="mono-medium">Mink Lash Playas Pestañas Híbridas</h2>
             <img src="img/minklashclasicas.jpg" alt="Pestañas Hirbridas Mink Lash Playas" class="zoom-img">
             <div class="options">
                 <p>En Mink Lash Playas recomendamos a todas nuestras clientas ponerse pestañas híbridas y hacer el relleno cada 15 días.</p>
@@ -100,7 +109,7 @@
         </div>
 
         <div class="service">
-            <h2>Mink Lash Playas Pestañas Volumen</h2>
+            <h2 class="mono-medium">Mink Lash Playas Pestañas Volumen</h2>
             <img src="img/minklashclasicas.jpg" alt="Pestañas Volumen Mink Lash Playas" class="zoom-img">
             <div class="options">
                 <p>En Mink Lash Playas recomendamos a todas nuestras clientas ponerse pestañas volumen y hacer el relleno cada 15 días.</p>
@@ -113,7 +122,7 @@
         </div>
 
         <div class="service">
-            <h2>Mink Lash Playas Pestañas Mega Volumen</h2>
+            <h2 class="mono-medium">Mink Lash Playas Pestañas Mega Volumen</h2>
             <img src="img/minklashclasicas.jpg" alt="Pestañas Mega Volumrn" class="zoom-img">
             <div class="options">
                 <p>En Mink Lash Playas recomendamos a todas nuestras clientas ponerse pestañas mega volumen y hacer el relleno cada 15 días.</p>
@@ -131,7 +140,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <article class="modal-content">
                 <header class="modal-header">
-                    <h2 class="modal-title" id="imageModalLabel">Mink Lash Playas</h2>
+                    <h2 class="modal-title mono-medium" id="imageModalLabel">Mink Lash Playas</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
